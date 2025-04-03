@@ -55,7 +55,6 @@ def menu(request):
       {'name': 'falafe', 'price': '12'},
       {'name': 'shawarma', 'price': '32'},
     ],
-    # 'items': items_dict,
     'menu': menu_items,
   }
   return render(
