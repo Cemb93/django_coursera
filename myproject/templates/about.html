@@ -1,4 +1,12 @@
+{% extends 'base.html' %}
 {% load static %}
+{% block content %}
+<p> About Us</p>
+<p> This is an About page for Little Lemon </p>
+
+{% endblock %}
+
+<!-- {% load static %}
 <!DOCTYPE html>
 
 <html lang="en">
@@ -11,16 +19,9 @@
 </head>
 
 <body>
-  <!-- Add heading code -->
-  <!-- Add heading code -->
   <h1 style="color: #495E57"> About </h1>
-  <!-- Add paragraph code -->
   <p> {{content.about}} </p>
-  <!-- Add image code -->
-  <!-- Add image code -->
   <img src="{% static '/img/dessert.jpg' %}">
-  <!-- Note: The static image must be present in the location specified with correct file name -->
-
 </body>
 
-</html>
+</html> --

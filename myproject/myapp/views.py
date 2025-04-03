@@ -5,16 +5,20 @@ from .models import Menu
 
 # Create your views here.
 def home(request):
-  return HttpResponse("Welcome to Little Lemon !")
+  # return HttpResponse("Welcome to Little Lemon !")
+  return render(request, 'index.html')
 
 def about(request):
-  return HttpResponse("About us")
+  # return HttpResponse("About us")
+  return render(request, 'about.html')
 
 def menu(request):
-  return HttpResponse("Menu for Little Lemon")
+  # return HttpResponse("Menu for Little Lemon")
+  return render(request, 'menu.html')
 
 def book(request):
-  return HttpResponse("Make a booking")
+  # return HttpResponse("Make a booking")
+  return render(request, 'book.html')
 
 def drinks(request, drink_name):
   drink = {
