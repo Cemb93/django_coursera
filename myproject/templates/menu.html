@@ -17,6 +17,25 @@
   <!-- Add image code -->
   <img src="{% static '/img/dessert.jpg' %}">
   <!-- Note: The static image must be present in the location specified with correct file name -->
+  <p>{{ content.about }}</p>
+  <table style="border: 1px solid black;">
+    {% for item in content.mains %}
+    <tr>
+      <td style="border: 1px solid black;">{{item.name}}</td>
+      <td style="border: 1px solid black;">{{item.price}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <h1>MENU DE MI DB</h1>
+  {% if content.menu %}
+
+  {% for item in content.menu %}
+  {{ item.name }} : {{ item.price }}
+  <br>
+  {% endfor %}
+  {% else %}
+  <p> No items to display !</p>
+  {% endif %}
 </body>
 
 </html>

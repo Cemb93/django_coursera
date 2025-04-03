@@ -76,10 +76,9 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
         'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
         'NAME': 'feedback',
+        # 'NAME': str(BASE_DIR / "feedback"),
         'USER': 'root',   
         'PASSWORD': '1019081303',   
         'HOST': '127.0.0.1',   
