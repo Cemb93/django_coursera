@@ -21,10 +21,12 @@ def book(request):
 
 # Add your code here to create new views
 def menu(request):
+  list = Menu.objects.all()
+  order_list = sorted(list, key=lambda x: x.name)
   return render(
     request,
     'menu.html',
-    {'menu': Menu.objects.all()}
+    {'menu': order_list},
   )
 
 def display_menu_item(request, pk=None):
